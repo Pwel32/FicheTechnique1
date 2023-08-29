@@ -97,5 +97,10 @@ namespace FicheTechnique
             getGpuName();
             getCurrentResolution();
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure", "Exiting software", MessageBoxButtons.OKCancel);
+        }
     }
 }
