@@ -14,4 +14,5 @@ Displaying base information on computer's hardware.
 
 Doing:
 Battery Tester
+
 Later when everything else is done: Make a good User Interface
