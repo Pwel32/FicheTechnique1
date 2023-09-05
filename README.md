@@ -1,4 +1,3 @@
-# FicheTechnique1
-Small program which prompt some informations about your computer's hardware  
+# Keyboard Tester
+the keyboard tester's goal is to verify that every keys of the keyboard are functional.
 
-BTW ONLY WORKS ON WINDOWS

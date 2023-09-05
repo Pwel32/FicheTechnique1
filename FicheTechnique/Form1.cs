@@ -36,9 +36,17 @@ namespace FicheTechnique
         }
         public void getAvailableRAM()
         {
+            ManagementObjectSearcher mos = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_PhysicalMemory");
+            foreach (ManagementObject mo in mos.Get())
+            {
+                ulong speed = ulong.Parse(mo["Speed"].ToString());
+                lbMemorySpeed.Text = speed.ToString() + " MHz";
+            }
+
             ComputerInfo CI = new ComputerInfo();
             ulong mem = ulong.Parse(CI.TotalPhysicalMemory.ToString());
             lbMemorySize.Text = (mem / (1024 * 1024) + " MB").ToString();
+            
         }
         public void getStorage()
         {
@@ -88,6 +96,11 @@ namespace FicheTechnique
             getAvailableRAM();
             getGpuName();
             getCurrentResolution();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure", "Exiting software", MessageBoxButtons.OKCancel);
         }
     }
 }
