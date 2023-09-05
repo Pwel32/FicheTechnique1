@@ -1,4 +1,3 @@
-# FicheTechnique1
-Small program which prompt some informations about your computer's hardware  
+# Monitor Tester
 
-BTW ONLY WORKS ON WINDOWS
+Aims at verifying if all the pixels are functional
