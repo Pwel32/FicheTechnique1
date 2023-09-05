@@ -4,7 +4,9 @@ Also features different tests to make the best diagnosis of a windows computer w
 
 TO DO:
 Battery Tester (for laptops).
+
 Keyboard Tester (generally for laptops but can be used with external keyboards).
+
 Monitor Tester.
 
 Done:
