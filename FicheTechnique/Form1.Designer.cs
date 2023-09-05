@@ -43,6 +43,7 @@
             this.lbGPUName1 = new System.Windows.Forms.Label();
             this.lbRes = new System.Windows.Forms.Label();
             this.CURRES = new System.Windows.Forms.Label();
+            this.lbMemorySpeed = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbCPU
@@ -57,10 +58,10 @@
             // CPUNAME
             // 
             this.CPUNAME.AutoSize = true;
-            this.CPUNAME.Font = new System.Drawing.Font("Roland", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CPUNAME.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CPUNAME.Location = new System.Drawing.Point(273, 94);
             this.CPUNAME.Name = "CPUNAME";
-            this.CPUNAME.Size = new System.Drawing.Size(62, 28);
+            this.CPUNAME.Size = new System.Drawing.Size(59, 26);
             this.CPUNAME.TabIndex = 1;
             this.CPUNAME.Text = "CPU";
             // 
@@ -76,20 +77,20 @@
             // DISKNAME
             // 
             this.DISKNAME.AutoSize = true;
-            this.DISKNAME.Font = new System.Drawing.Font("Roland", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DISKNAME.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DISKNAME.Location = new System.Drawing.Point(193, 143);
             this.DISKNAME.Name = "DISKNAME";
-            this.DISKNAME.Size = new System.Drawing.Size(142, 28);
+            this.DISKNAME.Size = new System.Drawing.Size(112, 26);
             this.DISKNAME.TabIndex = 3;
             this.DISKNAME.Text = "Disk Drive";
             // 
             // SizeName
             // 
             this.SizeName.AutoSize = true;
-            this.SizeName.Font = new System.Drawing.Font("Roland", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SizeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SizeName.Location = new System.Drawing.Point(279, 180);
             this.SizeName.Name = "SizeName";
-            this.SizeName.Size = new System.Drawing.Size(56, 24);
+            this.SizeName.Size = new System.Drawing.Size(46, 24);
             this.SizeName.TabIndex = 4;
             this.SizeName.Text = "Size";
             // 
@@ -114,10 +115,10 @@
             // MemorySize
             // 
             this.MemorySize.AutoSize = true;
-            this.MemorySize.Font = new System.Drawing.Font("Roland", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MemorySize.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MemorySize.Location = new System.Drawing.Point(146, 210);
             this.MemorySize.Name = "MemorySize";
-            this.MemorySize.Size = new System.Drawing.Size(189, 28);
+            this.MemorySize.Size = new System.Drawing.Size(144, 26);
             this.MemorySize.TabIndex = 7;
             this.MemorySize.Text = "Total Memory";
             // 
@@ -151,10 +152,10 @@
             // GPUNAME
             // 
             this.GPUNAME.AutoSize = true;
-            this.GPUNAME.Font = new System.Drawing.Font("Roland", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GPUNAME.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GPUNAME.Location = new System.Drawing.Point(155, 256);
             this.GPUNAME.Name = "GPUNAME";
-            this.GPUNAME.Size = new System.Drawing.Size(180, 28);
+            this.GPUNAME.Size = new System.Drawing.Size(141, 26);
             this.GPUNAME.TabIndex = 11;
             this.GPUNAME.Text = "Graphic Card";
             // 
@@ -179,18 +180,28 @@
             // CURRES
             // 
             this.CURRES.AutoSize = true;
-            this.CURRES.Font = new System.Drawing.Font("Roland", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CURRES.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CURRES.Location = new System.Drawing.Point(80, 304);
             this.CURRES.Name = "CURRES";
-            this.CURRES.Size = new System.Drawing.Size(255, 28);
+            this.CURRES.Size = new System.Drawing.Size(193, 26);
             this.CURRES.TabIndex = 14;
             this.CURRES.Text = "Current Resolution";
+            // 
+            // lbMemorySpeed
+            // 
+            this.lbMemorySpeed.AutoSize = true;
+            this.lbMemorySpeed.Location = new System.Drawing.Point(554, 219);
+            this.lbMemorySpeed.Name = "lbMemorySpeed";
+            this.lbMemorySpeed.Size = new System.Drawing.Size(76, 13);
+            this.lbMemorySpeed.TabIndex = 15;
+            this.lbMemorySpeed.Text = "Memory speed";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(838, 572);
+            this.Controls.Add(this.lbMemorySpeed);
             this.Controls.Add(this.CURRES);
             this.Controls.Add(this.lbRes);
             this.Controls.Add(this.lbGPUName1);
@@ -208,6 +219,7 @@
             this.Controls.Add(this.lbCPU);
             this.Name = "Form1";
             this.Text = "Fiche Technique";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -231,6 +243,7 @@
         private System.Windows.Forms.Label lbGPUName1;
         private System.Windows.Forms.Label lbRes;
         private System.Windows.Forms.Label CURRES;
+        private System.Windows.Forms.Label lbMemorySpeed;
     }
 }
 

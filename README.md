@@ -1,4 +1,3 @@
-# FicheTechnique1
-Small program which prompt some informations about your computer's hardware  
+# User Interface Design
 
-BTW ONLY WORKS ON WINDOWS
+branch on which I will do the User Interface design
