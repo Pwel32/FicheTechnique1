@@ -28,222 +28,140 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbCPU = new System.Windows.Forms.Label();
-            this.CPUNAME = new System.Windows.Forms.Label();
-            this.lbDiskName = new System.Windows.Forms.Label();
-            this.DISKNAME = new System.Windows.Forms.Label();
-            this.SizeName = new System.Windows.Forms.Label();
-            this.lbDiskSize = new System.Windows.Forms.Label();
-            this.lbMemorySize = new System.Windows.Forms.Label();
-            this.MemorySize = new System.Windows.Forms.Label();
-            this.lbDiskName1 = new System.Windows.Forms.Label();
-            this.lbDiskSize1 = new System.Windows.Forms.Label();
-            this.lbGPUName = new System.Windows.Forms.Label();
-            this.GPUNAME = new System.Windows.Forms.Label();
-            this.lbGPUName1 = new System.Windows.Forms.Label();
-            this.lbRes = new System.Windows.Forms.Label();
-            this.CURRES = new System.Windows.Forms.Label();
-            this.lbMemorySpeed = new System.Windows.Forms.Label();
+            this.pnHeader = new System.Windows.Forms.Panel();
+            this.lbTitle = new System.Windows.Forms.Label();
+            this.pnSideMenu = new System.Windows.Forms.Panel();
+            this.btnMonitorTester = new System.Windows.Forms.Button();
+            this.btnKeyboardTester = new System.Windows.Forms.Button();
+            this.btnBatteryTester = new System.Windows.Forms.Button();
+            this.btnHwInfo = new System.Windows.Forms.Button();
+            this.btnMainPage = new System.Windows.Forms.Button();
+            this.pnHeader.SuspendLayout();
+            this.pnSideMenu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lbCPU
+            // pnHeader
             // 
-            this.lbCPU.AutoSize = true;
-            this.lbCPU.Location = new System.Drawing.Point(363, 103);
-            this.lbCPU.Name = "lbCPU";
-            this.lbCPU.Size = new System.Drawing.Size(29, 13);
-            this.lbCPU.TabIndex = 0;
-            this.lbCPU.Text = "CPU";
+            this.pnHeader.BackColor = System.Drawing.Color.LightBlue;
+            this.pnHeader.Controls.Add(this.lbTitle);
+            this.pnHeader.Location = new System.Drawing.Point(7, 12);
+            this.pnHeader.Name = "pnHeader";
+            this.pnHeader.Size = new System.Drawing.Size(1093, 112);
+            this.pnHeader.TabIndex = 0;
             // 
-            // CPUNAME
+            // lbTitle
             // 
-            this.CPUNAME.AutoSize = true;
-            this.CPUNAME.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CPUNAME.Location = new System.Drawing.Point(273, 94);
-            this.CPUNAME.Name = "CPUNAME";
-            this.CPUNAME.Size = new System.Drawing.Size(59, 26);
-            this.CPUNAME.TabIndex = 1;
-            this.CPUNAME.Text = "CPU";
+            this.lbTitle.AutoSize = true;
+            this.lbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 43F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle.Location = new System.Drawing.Point(419, 25);
+            this.lbTitle.Name = "lbTitle";
+            this.lbTitle.Size = new System.Drawing.Size(270, 67);
+            this.lbTitle.TabIndex = 0;
+            this.lbTitle.Text = "Welcome";
+            this.lbTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // lbDiskName
+            // pnSideMenu
             // 
-            this.lbDiskName.AutoSize = true;
-            this.lbDiskName.Location = new System.Drawing.Point(363, 152);
-            this.lbDiskName.Name = "lbDiskName";
-            this.lbDiskName.Size = new System.Drawing.Size(56, 13);
-            this.lbDiskName.TabIndex = 2;
-            this.lbDiskName.Text = "DiskName";
+            this.pnSideMenu.Controls.Add(this.btnMonitorTester);
+            this.pnSideMenu.Controls.Add(this.btnKeyboardTester);
+            this.pnSideMenu.Controls.Add(this.btnBatteryTester);
+            this.pnSideMenu.Controls.Add(this.btnHwInfo);
+            this.pnSideMenu.Controls.Add(this.btnMainPage);
+            this.pnSideMenu.Location = new System.Drawing.Point(7, 113);
+            this.pnSideMenu.Name = "pnSideMenu";
+            this.pnSideMenu.Size = new System.Drawing.Size(221, 510);
+            this.pnSideMenu.TabIndex = 1;
             // 
-            // DISKNAME
+            // btnMonitorTester
             // 
-            this.DISKNAME.AutoSize = true;
-            this.DISKNAME.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DISKNAME.Location = new System.Drawing.Point(193, 143);
-            this.DISKNAME.Name = "DISKNAME";
-            this.DISKNAME.Size = new System.Drawing.Size(112, 26);
-            this.DISKNAME.TabIndex = 3;
-            this.DISKNAME.Text = "Disk Drive";
+            this.btnMonitorTester.BackColor = System.Drawing.Color.LightBlue;
+            this.btnMonitorTester.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue;
+            this.btnMonitorTester.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMonitorTester.Location = new System.Drawing.Point(0, 408);
+            this.btnMonitorTester.Name = "btnMonitorTester";
+            this.btnMonitorTester.Size = new System.Drawing.Size(221, 102);
+            this.btnMonitorTester.TabIndex = 4;
+            this.btnMonitorTester.Text = "Monitor Tester";
+            this.btnMonitorTester.UseVisualStyleBackColor = false;
             // 
-            // SizeName
+            // btnKeyboardTester
             // 
-            this.SizeName.AutoSize = true;
-            this.SizeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SizeName.Location = new System.Drawing.Point(279, 180);
-            this.SizeName.Name = "SizeName";
-            this.SizeName.Size = new System.Drawing.Size(46, 24);
-            this.SizeName.TabIndex = 4;
-            this.SizeName.Text = "Size";
+            this.btnKeyboardTester.BackColor = System.Drawing.Color.LightBlue;
+            this.btnKeyboardTester.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue;
+            this.btnKeyboardTester.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKeyboardTester.Location = new System.Drawing.Point(0, 306);
+            this.btnKeyboardTester.Name = "btnKeyboardTester";
+            this.btnKeyboardTester.Size = new System.Drawing.Size(221, 102);
+            this.btnKeyboardTester.TabIndex = 3;
+            this.btnKeyboardTester.Text = "Keyboard Tester";
+            this.btnKeyboardTester.UseVisualStyleBackColor = false;
             // 
-            // lbDiskSize
+            // btnBatteryTester
             // 
-            this.lbDiskSize.AutoSize = true;
-            this.lbDiskSize.Location = new System.Drawing.Point(363, 187);
-            this.lbDiskSize.Name = "lbDiskSize";
-            this.lbDiskSize.Size = new System.Drawing.Size(48, 13);
-            this.lbDiskSize.TabIndex = 5;
-            this.lbDiskSize.Text = "DiskSize";
+            this.btnBatteryTester.BackColor = System.Drawing.Color.LightBlue;
+            this.btnBatteryTester.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue;
+            this.btnBatteryTester.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBatteryTester.Location = new System.Drawing.Point(0, 204);
+            this.btnBatteryTester.Name = "btnBatteryTester";
+            this.btnBatteryTester.Size = new System.Drawing.Size(221, 102);
+            this.btnBatteryTester.TabIndex = 2;
+            this.btnBatteryTester.Text = "Battery Tester";
+            this.btnBatteryTester.UseVisualStyleBackColor = false;
             // 
-            // lbMemorySize
+            // btnHwInfo
             // 
-            this.lbMemorySize.AutoSize = true;
-            this.lbMemorySize.Location = new System.Drawing.Point(363, 219);
-            this.lbMemorySize.Name = "lbMemorySize";
-            this.lbMemorySize.Size = new System.Drawing.Size(67, 13);
-            this.lbMemorySize.TabIndex = 6;
-            this.lbMemorySize.Text = "Memory Size";
+            this.btnHwInfo.BackColor = System.Drawing.Color.LightBlue;
+            this.btnHwInfo.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue;
+            this.btnHwInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHwInfo.Location = new System.Drawing.Point(0, 102);
+            this.btnHwInfo.Name = "btnHwInfo";
+            this.btnHwInfo.Size = new System.Drawing.Size(221, 102);
+            this.btnHwInfo.TabIndex = 1;
+            this.btnHwInfo.Text = "Hardware Information";
+            this.btnHwInfo.UseVisualStyleBackColor = false;
             // 
-            // MemorySize
+            // btnMainPage
             // 
-            this.MemorySize.AutoSize = true;
-            this.MemorySize.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MemorySize.Location = new System.Drawing.Point(146, 210);
-            this.MemorySize.Name = "MemorySize";
-            this.MemorySize.Size = new System.Drawing.Size(144, 26);
-            this.MemorySize.TabIndex = 7;
-            this.MemorySize.Text = "Total Memory";
-            // 
-            // lbDiskName1
-            // 
-            this.lbDiskName1.AutoSize = true;
-            this.lbDiskName1.Location = new System.Drawing.Point(551, 152);
-            this.lbDiskName1.Name = "lbDiskName1";
-            this.lbDiskName1.Size = new System.Drawing.Size(68, 13);
-            this.lbDiskName1.TabIndex = 8;
-            this.lbDiskName1.Text = "Disk Name 2";
-            // 
-            // lbDiskSize1
-            // 
-            this.lbDiskSize1.AutoSize = true;
-            this.lbDiskSize1.Location = new System.Drawing.Point(551, 187);
-            this.lbDiskSize1.Name = "lbDiskSize1";
-            this.lbDiskSize1.Size = new System.Drawing.Size(60, 13);
-            this.lbDiskSize1.TabIndex = 9;
-            this.lbDiskSize1.Text = "Disk Size 2";
-            // 
-            // lbGPUName
-            // 
-            this.lbGPUName.AutoSize = true;
-            this.lbGPUName.Location = new System.Drawing.Point(363, 265);
-            this.lbGPUName.Name = "lbGPUName";
-            this.lbGPUName.Size = new System.Drawing.Size(61, 13);
-            this.lbGPUName.TabIndex = 10;
-            this.lbGPUName.Text = "GPU Name";
-            // 
-            // GPUNAME
-            // 
-            this.GPUNAME.AutoSize = true;
-            this.GPUNAME.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GPUNAME.Location = new System.Drawing.Point(155, 256);
-            this.GPUNAME.Name = "GPUNAME";
-            this.GPUNAME.Size = new System.Drawing.Size(141, 26);
-            this.GPUNAME.TabIndex = 11;
-            this.GPUNAME.Text = "Graphic Card";
-            // 
-            // lbGPUName1
-            // 
-            this.lbGPUName1.AutoSize = true;
-            this.lbGPUName1.Location = new System.Drawing.Point(554, 264);
-            this.lbGPUName1.Name = "lbGPUName1";
-            this.lbGPUName1.Size = new System.Drawing.Size(70, 13);
-            this.lbGPUName1.TabIndex = 12;
-            this.lbGPUName1.Text = "GPU Name 2";
-            // 
-            // lbRes
-            // 
-            this.lbRes.AutoSize = true;
-            this.lbRes.Location = new System.Drawing.Point(363, 313);
-            this.lbRes.Name = "lbRes";
-            this.lbRes.Size = new System.Drawing.Size(94, 13);
-            this.lbRes.TabIndex = 13;
-            this.lbRes.Text = "Current Resolution";
-            // 
-            // CURRES
-            // 
-            this.CURRES.AutoSize = true;
-            this.CURRES.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CURRES.Location = new System.Drawing.Point(80, 304);
-            this.CURRES.Name = "CURRES";
-            this.CURRES.Size = new System.Drawing.Size(193, 26);
-            this.CURRES.TabIndex = 14;
-            this.CURRES.Text = "Current Resolution";
-            // 
-            // lbMemorySpeed
-            // 
-            this.lbMemorySpeed.AutoSize = true;
-            this.lbMemorySpeed.Location = new System.Drawing.Point(554, 219);
-            this.lbMemorySpeed.Name = "lbMemorySpeed";
-            this.lbMemorySpeed.Size = new System.Drawing.Size(76, 13);
-            this.lbMemorySpeed.TabIndex = 15;
-            this.lbMemorySpeed.Text = "Memory speed";
+            this.btnMainPage.BackColor = System.Drawing.Color.LightBlue;
+            this.btnMainPage.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue;
+            this.btnMainPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMainPage.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnMainPage.Location = new System.Drawing.Point(0, 0);
+            this.btnMainPage.Name = "btnMainPage";
+            this.btnMainPage.Size = new System.Drawing.Size(221, 102);
+            this.btnMainPage.TabIndex = 0;
+            this.btnMainPage.Text = "Main Page";
+            this.btnMainPage.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(838, 572);
-            this.Controls.Add(this.lbMemorySpeed);
-            this.Controls.Add(this.CURRES);
-            this.Controls.Add(this.lbRes);
-            this.Controls.Add(this.lbGPUName1);
-            this.Controls.Add(this.GPUNAME);
-            this.Controls.Add(this.lbGPUName);
-            this.Controls.Add(this.lbDiskSize1);
-            this.Controls.Add(this.lbDiskName1);
-            this.Controls.Add(this.MemorySize);
-            this.Controls.Add(this.lbMemorySize);
-            this.Controls.Add(this.lbDiskSize);
-            this.Controls.Add(this.SizeName);
-            this.Controls.Add(this.DISKNAME);
-            this.Controls.Add(this.lbDiskName);
-            this.Controls.Add(this.CPUNAME);
-            this.Controls.Add(this.lbCPU);
+            this.ClientSize = new System.Drawing.Size(1112, 628);
+            this.Controls.Add(this.pnSideMenu);
+            this.Controls.Add(this.pnHeader);
+            this.MaximumSize = new System.Drawing.Size(1128, 667);
+            this.MinimumSize = new System.Drawing.Size(1128, 667);
             this.Name = "Form1";
             this.Text = "Fiche Technique";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.pnHeader.ResumeLayout(false);
+            this.pnHeader.PerformLayout();
+            this.pnSideMenu.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label lbCPU;
-        private System.Windows.Forms.Label CPUNAME;
-        private System.Windows.Forms.Label lbDiskName;
-        private System.Windows.Forms.Label DISKNAME;
-        private System.Windows.Forms.Label SizeName;
-        private System.Windows.Forms.Label lbDiskSize;
-        private System.Windows.Forms.Label MemorySize;
-        public System.Windows.Forms.Label lbMemorySize;
-        private System.Windows.Forms.Label lbDiskName1;
-        private System.Windows.Forms.Label lbDiskSize1;
-        private System.Windows.Forms.Label lbGPUName;
-        private System.Windows.Forms.Label GPUNAME;
-        private System.Windows.Forms.Label lbGPUName1;
-        private System.Windows.Forms.Label lbRes;
-        private System.Windows.Forms.Label CURRES;
-        private System.Windows.Forms.Label lbMemorySpeed;
+        private System.Windows.Forms.Panel pnHeader;
+        private System.Windows.Forms.Label lbTitle;
+        private System.Windows.Forms.Panel pnSideMenu;
+        private System.Windows.Forms.Button btnHwInfo;
+        private System.Windows.Forms.Button btnMainPage;
+        private System.Windows.Forms.Button btnBatteryTester;
+        private System.Windows.Forms.Button btnMonitorTester;
+        private System.Windows.Forms.Button btnKeyboardTester;
     }
 }
 
